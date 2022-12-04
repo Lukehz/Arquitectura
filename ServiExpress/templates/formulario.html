@@ -1,0 +1,138 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="{% static 'css/estilos.css'%}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script type="text/javascript">
+      $(document).ready(function(){
+          $("#error").hide();
+
+          $("#formulario").submit(function(){
+              var mensaje="";
+
+              if($("#Nombre").val().trim().length==0){
+                  mensaje= "El nombre está en blanco";
+              }
+              if($("#Apellido").val().trim().length==0){
+                  mensaje= "El apellido está en blanco";
+              }
+              if($("#Correo").val().trim().length==0){
+                  mensaje= "El email está en blanco";
+              }
+              if($("#Teléfono").val().trim().length==0){
+                  mensaje= "El teléfono está en blanco";
+              }
+              if($("#mensaje").val().trim().length==0){
+                  mensaje= "Debe ingresar una consulta";
+              }
+              if(mensaje !=""){
+                  $("#error").html(mensaje);
+                  $("#error").show();
+                  event.preventDefault();
+              }
+
+          });
+            
+
+
+
+
+
+
+
+
+
+
+      })
+
+
+  </script>
+
+    
+
+    
+</head>
+<body>
+    <header>
+        <h1>Contacto de Venta</h1>
+        <a href="Mipaginaweb.html"><img src="../images/logo.png" alt="Memoria Ram"/></a>
+        
+
+
+    </header>
+
+   
+    <section class="formulario" id="formulario">
+        <form action="procesar.php" enctype="multipart/form-data" method="get" name="formulariocontacto">
+        <h4>Formulario Cotización</h4>
+        <input class="control" type="text"  name="Nombre" id="Nombre" placeholder="Ingrese su nombre">
+        <input class="control" type="text"  name="Apellido" id="Apellido" placeholder="Ingrese su Apellido">
+        <input class="control" type="email"  name="Correo" id="Correo" placeholder="Ingrese su Email">
+        <input class="control" type="number"  name="Teléfono" id="Teléfono" placeholder="Ingrese su número de Teléfono">
+        <textarea class="control input--message" placeholder="Ingresa tu Consulta/Cotización" id="mensaje"></textarea>
+
+        <input type="submit" class="btn btn-danger" id="enviar" value="Enviar">
+        <div id="error" class="alert alert-danger" role="alert"></div>
+
+
+        <!--<select name="formulariou" size="2">
+            <option value="1">pan </option>
+            <option value="2">Cebolla</option>
+            <option value="3">Palta</option>
+            <option value="4">Mani</option>
+            <option value="5">sandia</option>
+
+
+
+        </select>-->
+
+        </form>
+        
+
+
+        
+    </section>
+
+    <article >
+        
+        <a href="Mipaginaweb.html"><input class="botones" type="button" value="Atrás"></a>
+        <a href="Mipaginaweb.html"><input class="botones" type="button" value="Inicio"></a>
+        
+    </article>
+
+
+    <footer>
+        <table >
+            <tr class="text-center">
+              <th> &copy; Todos los Derechos reservados</th>
+              
+            </tr>
+            <tr class="text-center">
+                <th>Call Center: +56966463594</th>
+            </tr>
+            <tr class="text-center">
+                <th>Email: SetupC@gmail.com</th>
+            </tr>
+            <tr class="text-center">
+            
+              <td>  <a href="Mipaginaweb.html"><img src="../images/logo.png" alt="logopequeño"></td></a>
+              
+            </tr>
+            
+          </table>
+    
+    </footer>
+    
+</body>
+</html>

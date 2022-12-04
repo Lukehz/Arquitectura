@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 20%;
+}
+
+header{
+    text-align: center;
+    
+    
+    
+}
+body{
+    background-image: linear-gradient(120deg, #f1f1f1 0%, #6bb36f 100%);
+    
+    width: 100%;
+}
+/*Galería*/
+.container-img{
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+}
+.container-img .box-img figure{
+    width: 100%;
+    height: 100%;
+}
+
+.container-img .box-img img{
+    width: 100%;
+    height: 100%;
+    object-fit:  cover;
+}
+
+.container-img .box-img:nth-child(1){
+    grid-column-start: span 2;
+}
+
+.container-img .box-img:nth-child(4){
+    grid-row-start: span 2;
+}
+
+
+/*Formulario*/
+.formulario{
+    width: 400px;
+    background-color: aqua;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 16px;
+    font-family: 'calibri';
+    color: white;
+}
+
+.formulario h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.control{
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 16px;
+    border: 1px;
+    font-size: 12px;
+    font-family: 'calibri';
+}
+.input--message{
+    resize: none;
+    padding: 1.8em 1em;
+
+}
+
+.boton{
+    width: 100%;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+
+}
+
+/*Carousel*/
+.d-block{
+    width: 25%;
+    margin: auto;
+    display: block;
+}
+
+    
+
+/*Menú*/
+.bg-light{
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
+}
+/* Botones*/
+.botones{
+    
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    padding: 5px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    border-radius: 8px;
+
+
+}
+
+/* Botones Componentes*/
+.botonescomp{
+    
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    padding: 5px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    top: 700px;
+    border-radius: 8px;
+}
+/*Botones Memoria Ram*/
+.botonesm{
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+    padding: 5px;
+    margin: auto;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    border-radius: 8px;
+
+}
+
+
+
+
+
+
+
+
+/*TABLA DEL FOOTER*/
+
+table {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    width: 100%;
+    border: 1px solid;
+    
+  }
+table img{
+    margin: auto;
+    display: block;
+    width: 50px;
+}
+
+/*Tabla index*/
+
+.tablaindex {
+    position: relative;
+    top: 200px;
+
+}
+
+.tablaindex th{
+    margin: auto;
+    display: block;
+    text-align: center;
+    
+
+}
+.tablaindex tr{
+    position: relative;
+    
+}
+
+/*TABLA COMPONENTES*/
+.tablacomp {
+    position: relative;
+    top: 800px;
+
+}
+
+.tablacomp th{
+    margin: auto;
+    display: block;
+    text-align: center;
+    
+
+}
+.tablacomp tr{
+    position: relative;
+    
+}
+
+/*Tabla Periféricos*/
+
+.tablaper {
+    position: relative;
+    top: 800px;
+
+}
+
+.tablaper th{
+    margin: auto;
+    display: block;
+    text-align: center;
+    
+
+}
+.tablaper tr{
+    position: relative;
+    
+}
+
+/*Tabla memoria ram*/
+.tablam {
+    position: relative;
+    top: 200px;
+
+}
+
+.tablam th{
+    margin: auto;
+    display: block;
+    text-align: center;
+    
+
+}
+.tablam tr{
+    position: relative;
+    
+}
+
+
+
+/*PIE DE PAGINA*/
+.piedepagina{
+    position: relative;
+    top: 1100px;
+}
+
+
+/* CUADROS HOOVER*/
+
+
+
+
+
+.tittle{
+    text-align: center;
+    font-size: 40px;
+    color: #6a6a6a;
+    margin-top: 100px;
+    font-weight: 100;
+    font-family: 'calibri';
+}
+
+
+
+.container{
+    
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+
+}
+
+.container .card{
+    background-image: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+    width: 350px;
+    height: 515px;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 16px;
+    text-align: center;
+    transition: all 0.25s;
+    
+     
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 290px;
+    height: 220px;
+    margin-top: 16px;
+}
+
+.container .card h4{
+    font-weight: 600;
+}
+
+.container .card p{
+    padding:0 1rem;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.container .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #0400ff;
+}
+
+.container .card input{
+
+    position: relative;
+    width: fit-content;
+    top: 75px;
+    left: 100px;
+   
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
