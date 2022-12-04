@@ -61,10 +61,13 @@
 
  .card{
   margin-top: 1%;
-  height: 50%;
+  /*height: 50%;*/
   margin-bottom: 1%;
  }
 
+ .card-img, .card-img-bottom {
+  height: 100%;
+ }
  .card p{
   text-align: center;
  }
