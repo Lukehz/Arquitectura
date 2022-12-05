@@ -176,6 +176,8 @@
   animation: animate 3s linear infinite;
 }
 
+
+
 @keyframes animateWaves {
   0% {
     background-position-x: 1000px;
@@ -199,5 +201,3 @@
 
   
 
-
-  

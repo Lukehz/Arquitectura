@@ -6,3 +6,9 @@ def Formulario(request):
 
 def Inicio(request):
     return render(request, "../templates/index.html")
+
+def Servicios(request):
+    return render(request, "../templates/servicios.html")
+
+def Productos(request):
+    return render(request, "../templates/productos.html")

@@ -16,7 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from ServiExpress import views
-from ServiExpress.views import Formulario, Inicio
+from ServiExpress.views import Formulario, Inicio, Productos, Servicios
 
 
 urlpatterns = [
@@ -24,5 +24,9 @@ urlpatterns = [
 
     path('formulario/', Formulario),
 
-    path('', Inicio)
+    path('', Inicio),
+
+    path('servicio',Servicios),
+
+    path('productos', Productos)
 ]
