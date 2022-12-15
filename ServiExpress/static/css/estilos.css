@@ -24,29 +24,32 @@ body{
 
 /*Formulario*/
 .formulario{
-    width: 400px;
+    text-align: center;
+    width: 25%;
     background-color: rgb(81, 89, 190);
     padding: 30px;
     margin: auto;
     margin-top: 100px;
-    border-radius: 16px;
-    font-family: 'calibri';
+    border-radius: 40px;
+    font-family: Arial, Helvetica, sans-serif;
     color: white;
 }
 
 .formulario h4{
-    font-size: 22px;
+    text-align: center;
+    font-size: xx-large;
     margin-bottom: 20px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 .control{
+    text-align: center;
     width: 95%;
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 16px;
     border: 1px;
-    font-size: 12px;
+    font-size: 20px;
     font-family: 'calibri';
 }
 .input--message{
@@ -61,8 +64,16 @@ body{
     padding: 12px;
     margin: 16px 0;
     font-size: 16px;
-
 }
+.alert{
+    margin-top: 5%;
+}
+.btn-danger{
+    width: 30%;
+    height: 50px;
+    border-radius: 40px;
+}
+
 
 
     

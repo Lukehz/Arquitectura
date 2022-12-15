@@ -22,11 +22,11 @@ from ServiExpress.views import Formulario, Inicio, Productos, Servicios
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('formulario/', Formulario),
+    path('formulario/', Formulario, name='formulario'),
 
-    path('', Inicio),
+    path('', Inicio, name='inicio'),
 
-    path('servicio',Servicios),
+    path('servicio/',Servicios, name='servicio'),
 
-    path('productos', Productos)
+    path('productos/', Productos, name='productos')
 ]

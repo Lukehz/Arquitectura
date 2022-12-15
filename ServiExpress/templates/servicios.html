@@ -20,18 +20,22 @@
   <header class="bg-dark" id="headerLogo">
     <img src="{% static 'images/Logo.png' %}" alt="Logo">
   </header>
+
   <section>
+
     <nav class="navMenu" style="margin-bottom:-3%;">
       <ul id="barra">
-          <li><a href="../">Inicio</a></li>
-          <li><a href="formulario">Cotización</a></li>
-          <li><a href="servicio">Servicios</a></li>
-          <li><a href="productos">Productos</a></li>
+          <li><a href="{% url 'inicio'%}">Inicio</a></li>
+          <li><a href="{% url 'formulario'%}">Cotización</a></li>
+          <li><a href="{% url 'servicio'%}">Servicios</a></li>
+          <li><a href="{% url 'productos'%}">Productos</a></li>
       </ul>
   </nav>
+
     <h1><div class="tittle">Categorías</div></h1>
        
     <div class="container">
+
       <div class="card-deck">
 
         <div class="card">
@@ -54,6 +58,7 @@
           <br>
           <a href="#">Ingresa para agendar una hora</a>    
         </div>
+
       </div>
 
       <div class="card-deck" style="margin-top: 5%;">
@@ -71,7 +76,9 @@
           <br>
           <a href="#">Ingresa para agendar una hora</a>
         </div>
+
       </div>
+      
     </div>  
   </section> 
  
