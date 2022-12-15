@@ -17,130 +17,98 @@
     <!--Boostrap Footer-->
 </head>
 <body>
-    <header class="bg-dark" id="headerLogo">
-        <img src="{% static 'images/Logo.png' %}" alt="Logo">
-    </header>
-    <section>
-        <h1><div class="tittle">Categorías</div></h1>
+  <header class="bg-dark" id="headerLogo">
+    <img src="{% static 'images/Logo.png' %}" alt="Logo">
+  </header>
+  <section>
+    <nav class="navMenu" style="margin-bottom:-3%;">
+      <ul id="barra">
+          <li><a href="../">Inicio</a></li>
+          <li><a href="formulario">Cotización</a></li>
+          <li><a href="servicio">Servicios</a></li>
+          <li><a href="productos">Productos</a></li>
+      </ul>
+  </nav>
+    <h1><div class="tittle">Categorías</div></h1>
        
-        <div class="container">
-            <div class="card">
-                <a href="#"><img src="{% static 'images/neumatico.png' %}" alt=""></a>
-                <h4>Cambio de Neumaticos</h4>
-                <p></p>
-                    <a href="#">Ingresa para agendar una hora</a>
-                
-                
-            </div>
-            <div class="container">
-                <div class="card">
-                    <a href="#"><img src="{% static 'images/grua.png' %}" alt=""></a>
-                    <h4>Servicio de Grúa</h4>
-                    <p></p>
-                        <a href="#">Ingresa para agendar una hora</a>
-                    
-                    
-                </div>
-     
- 
-            <div class="card">
-             <a href="#"><img src="{% static 'images/motor.png' %}" alt=""></a>
-             <h4>Fallas del Motor</h4>
-             
-             <a href="#">Ingresa para agendar una hora</a>
-             
-         </div>
+    <div class="container">
+      <div class="card-deck">
 
-         <div class="card">
-            <a href="#"><img src="{% static 'images/aceite.png' %}" alt=""></a>
-            <h4>Cambio de Aceite</h4>
-            <p>
-                <a href="#">Ingresa para agendar una hora</a>
-            
+        <div class="card">
+          <a href="#"><img src="{% static 'images/grua.png' %}" alt=""></a>
+          <h4>Servicio de Grúa</h4>
+          <br>
+          <a href="#">Ingresa para agendar una hora</a>
         </div>
         
         <div class="card">
-            <a href="#"><img src="{% static 'images/pintura2.png' %}" alt=""></a>
-            <h4>Desabolladura y Pintura</h4>
-            <p>
-                <a href="#">Ingresa para agendar una hora</a>
-            
+          <a href="#"><img src="{% static 'images/neumatico.png' %}" alt=""></a>
+          <h4>Cambio de Neumaticos</h4>
+          <br>
+          <a href="#">Ingresa para agendar una hora</a>
         </div>
-    </section>
-    
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    <br><br>
-    
-    
 
-    
-    <article >
+        <div class="card">
+          <a href="#"><img src="{% static 'images/motor.png' %}" alt=""></a>
+          <h4>Fallas del Motor</h4>
+          <br>
+          <a href="#">Ingresa para agendar una hora</a>    
+        </div>
+      </div>
+
+      <div class="card-deck" style="margin-top: 5%;">
+
+        <div class="card">
+          <a href="#"><img src="{% static 'images/aceite.png' %}" alt=""></a>
+          <h4>Cambio de Aceite</h4>
+          <br>
+          <a href="#">Ingresa para agendar una hora</a>
+        </div>
         
-        <a href="../"><input class="botones" type="button" value="Atrás"></a>
-        <a href="../"><input class="botones" type="button" value="Inicio"></a>
-        
-    </article>
-
-
-
-    <br><br><br>
+        <div class="card">
+          <a href="#"><img src="{% static 'images/pintura2.png' %}" alt=""></a>
+          <h4>Desabolladura y Pintura</h4>
+          <br>
+          <a href="#">Ingresa para agendar una hora</a>
+        </div>
+      </div>
+    </div>  
+  </section> 
  
-    <footer class="footer">
-        <div class="waves">
-          <div class="wave" id="wave1"></div>
-          <div class="wave" id="wave2"></div>
-          <div class="wave" id="wave3"></div>
-          <div class="wave" id="wave4"></div>
-        </div>
-        <ul class="social-icon">
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a></li>
-          <li class="social-icon__item"><a class="social-icon__link" href="#">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a></li>
-        </ul>
-        <ul class="menu">
-          <li class="menu__item"><a class="menu__link" href="#">Help</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">About</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+  <footer class="footer" style="margin-top: 30%;">
+    <div class="waves">
+    <div class="wave" id="wave1"></div>
+    <div class="wave" id="wave2"></div>
+    <div class="wave" id="wave3"></div>
+    <div class="wave" id="wave4"></div>
+    </div>
+
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Help</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
     
-        </ul>
-        <p>&copy;2022 ServiExpress | All Rights Reserved</p>
-      </footer>
-      <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </ul>
+      <p>&copy;2022 ServiExpress | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 
